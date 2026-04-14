@@ -4,7 +4,6 @@
 - Bruno
 - Gustavo
 - Victor
-- Eduardo
 
 ### Sobre o Projeto
 
