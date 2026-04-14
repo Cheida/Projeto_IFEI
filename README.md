@@ -1,4 +1,11 @@
 # Projeto_IFEI
+
+## Integrantes
+- Bruno
+- Gustavo
+- Victor
+- Eduardo
+
 ### Sobre o Projeto
 
 Esse projeto consiste no desenvolvimento de um sistema de delivery, onde o usuário pode fazer pedidos, visualizar produtos e acompanhar o status da entrega.
