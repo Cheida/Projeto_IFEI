@@ -1,0 +1,135 @@
+CREATE TABLE usuarios (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    senha VARCHAR(100) NOT NULL,
+    data_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE restaurantes (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    endereco TEXT NOT NULL,
+    data_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE produtos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    preco DECIMAL(10,2) NOT NULL,
+    restaurante_id INT REFERENCES restaurantes(id),
+    data_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE pedidos (
+    id SERIAL PRIMARY KEY,
+    usuario_id INT REFERENCES usuarios(id) NOT NULL,
+    restaurante_id INT REFERENCES restaurantes(id) NOT NULL,
+    total DECIMAL(10,2),
+    status VARCHAR(50) CHECK (status IN ('pendente', 'preparando', 'entregue')),
+    data_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE itens_pedido (
+    id SERIAL PRIMARY KEY,
+    pedido_id INT REFERENCES pedidos(id),
+    produto_id INT REFERENCES produtos(id),
+    quantidade INT NOT NULL
+);
+
+INSERT INTO usuarios (nome, email, senha) VALUES
+('Gustavo', 'gustavo1@email.com', '123'),
+('Maria', 'maria@email.com', '123'),
+('João', 'joao@email.com', '123'),
+('Ana', 'ana@email.com', '123'),
+('Pedro', 'pedro@email.com', '123'),
+('Lucas', 'lucas@email.com', '123'),
+('Juliana', 'juliana@email.com', '123'),
+('Carlos', 'carlos@email.com', '123'),
+('Fernanda', 'fernanda@email.com', '123'),
+('Rafael', 'rafael@email.com', '123'),
+('Beatriz', 'beatriz@email.com', '123'),
+('Ricardo', 'ricardo@email.com', '123'),
+('Amanda', 'amanda@email.com', '123'),
+('Bruno', 'bruno@email.com', '123'),
+('Camila', 'camila@email.com', '123'),
+('Daniel', 'daniel@email.com', '123'),
+('Patricia', 'patricia@email.com', '123'),
+('Eduardo', 'eduardo@email.com', '123'),
+('Larissa', 'larissa@email.com', '123'),
+('Thiago', 'thiago@email.com', '123');
+
+INSERT INTO restaurantes (nome, endereco) VALUES
+('Burger House', 'Rua das Palmeiras, 123 - Centro'),
+('Pizza Mania', 'Avenida Paulista, 1500 - Bela Vista'),
+('Sushi Top', 'Rua Japão, 45 - Liberdade'),
+('Churrasco Grill', 'Avenida Brasil, 890 - Jardim América'),
+('Lanches Express', 'Rua XV de Novembro, 300 - Centro'),
+('Comida Caseira', 'Rua das Flores, 210 - Vila Mariana'),
+('Mexican Food', 'Avenida Atlântica, 500 - Copacabana'),
+('Veggie Life', 'Rua Harmonia, 77 - Vila Madalena'),
+('Pastelaria Central', 'Rua Direita, 12 - Centro'),
+('Doces Delícia', 'Avenida Independência, 999 - Ipiranga');
+
+INSERT INTO produtos (nome, preco, restaurante_id) VALUES
+('Hamburguer', 25, 1),
+('Batata Frita', 15, 1),
+('Pizza Calabresa', 40, 2),
+('Pizza Frango', 42, 2),
+('Sushi Combo', 60, 3),
+('Temaki', 25, 3),
+('Picanha', 70, 4),
+('Costela', 65, 4),
+('X-Burguer', 20, 5),
+('X-Salada', 22, 5),
+('Prato Feito', 18, 6),
+('Feijoada', 30, 6),
+('Taco', 25, 7),
+('Burrito', 28, 7),
+('Salada Vegana', 20, 8),
+('Hamburguer Vegano', 30, 8),
+('Pastel Carne', 10, 9),
+('Pastel Queijo', 9, 9),
+('Bolo Chocolate', 15, 10),
+('Brigadeiro', 5, 10);
+
+INSERT INTO pedidos (usuario_id, restaurante_id, total, status) VALUES
+(1,1,40,'pendente'),
+(2,2,80,'preparando'),
+(3,3,60,'entregue'),
+(4,4,70,'pendente'),
+(5,5,20,'entregue'),
+(6,6,30,'preparando'),
+(7,7,25,'pendente'),
+(8,8,30,'entregue'),
+(9,9,10,'pendente'),
+(10,10,15,'entregue'),
+(11,1,25,'preparando'),
+(12,2,42,'pendente'),
+(13,3,25,'entregue'),
+(14,4,65,'pendente'),
+(15,5,22,'preparando'),
+(16,6,18,'entregue'),
+(17,7,28,'pendente'),
+(18,8,20,'entregue'),
+(19,9,9,'pendente'),
+(20,10,5,'preparando');
+
+INSERT INTO itens_pedido (pedido_id, produto_id, quantidade) VALUES
+(1,1,1),
+(1,2,1),
+(2,3,2),
+(3,5,1),
+(4,7,1),
+(5,9,1),
+(6,12,1),
+(7,13,1),
+(8,16,1),
+(9,17,1),
+(10,19,1),
+(11,1,1),
+(12,4,1),
+(13,6,1),
+(14,8,1),
+(15,10,1),
+(16,11,1),
+(17,14,1),
+(18,15,1),
+(19,18,1),
+(20,20,1);
