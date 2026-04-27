@@ -33,9 +33,7 @@ Vai ser usado para guardar os dados principais do sistema, como:
 ### MongoDB
 
 Vai ser usado para dados mais flexíveis, como:
-- Histórico de pedidos
-- Preferências do usuário
-- Avaliações
+- Cardápio de comida
 
 ### Por que usar?
 - Porque ele trabalha com documentos (tipo JSON), então é mais fácil de adaptar conforme o sistema cresce.
