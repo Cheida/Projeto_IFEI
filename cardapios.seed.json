@@ -1,0 +1,132 @@
+[
+  {
+    "restaurante_id": 1,
+    "nome_restaurante": "Restaurante 1",
+    "categorias": [
+      {
+        "nome": "Lanches",
+        "produtos": [
+          { "nome": "Hamburguer", "preco_base": 25, "disponivel": true },
+          { "nome": "Batata Frita", "preco_base": 15, "disponivel": true }
+        ]
+      }
+    ]
+  },
+  {
+    "restaurante_id": 2,
+    "nome_restaurante": "Restaurante 2",
+    "categorias": [
+      {
+        "nome": "Pizzas",
+        "produtos": [
+          { "nome": "Pizza Calabresa", "preco_base": 40, "disponivel": true },
+          { "nome": "Pizza Frango", "preco_base": 42, "disponivel": true }
+        ]
+      }
+    ]
+  },
+  {
+    "restaurante_id": 3,
+    "nome_restaurante": "Restaurante 3",
+    "categorias": [
+      {
+        "nome": "Japonesa",
+        "produtos": [
+          { "nome": "Sushi Combo", "preco_base": 60, "disponivel": true },
+          { "nome": "Temaki", "preco_base": 25, "disponivel": true }
+        ]
+      }
+    ]
+  },
+  {
+    "restaurante_id": 4,
+    "nome_restaurante": "Restaurante 4",
+    "categorias": [
+      {
+        "nome": "Carnes",
+        "produtos": [
+          { "nome": "Picanha", "preco_base": 70, "disponivel": true },
+          { "nome": "Costela", "preco_base": 65, "disponivel": true }
+        ]
+      }
+    ]
+  },
+  {
+    "restaurante_id": 5,
+    "nome_restaurante": "Restaurante 5",
+    "categorias": [
+      {
+        "nome": "Lanches",
+        "produtos": [
+          { "nome": "X-Burguer", "preco_base": 20, "disponivel": true },
+          { "nome": "X-Salada", "preco_base": 22, "disponivel": true }
+        ]
+      }
+    ]
+  },
+  {
+    "restaurante_id": 6,
+    "nome_restaurante": "Restaurante 6",
+    "categorias": [
+      {
+        "nome": "Pratos",
+        "produtos": [
+          { "nome": "Prato Feito", "preco_base": 18, "disponivel": true },
+          { "nome": "Feijoada", "preco_base": 30, "disponivel": true }
+        ]
+      }
+    ]
+  },
+  {
+    "restaurante_id": 7,
+    "nome_restaurante": "Restaurante 7",
+    "categorias": [
+      {
+        "nome": "Mexicana",
+        "produtos": [
+          { "nome": "Taco", "preco_base": 25, "disponivel": true },
+          { "nome": "Burrito", "preco_base": 28, "disponivel": true }
+        ]
+      }
+    ]
+  },
+  {
+    "restaurante_id": 8,
+    "nome_restaurante": "Restaurante 8",
+    "categorias": [
+      {
+        "nome": "Vegano",
+        "produtos": [
+          { "nome": "Salada Vegana", "preco_base": 20, "disponivel": true },
+          { "nome": "Hamburguer Vegano", "preco_base": 30, "disponivel": true }
+        ]
+      }
+    ]
+  },
+  {
+    "restaurante_id": 9,
+    "nome_restaurante": "Restaurante 9",
+    "categorias": [
+      {
+        "nome": "Pastéis",
+        "produtos": [
+          { "nome": "Pastel Carne", "preco_base": 10, "disponivel": true },
+          { "nome": "Pastel Queijo", "preco_base": 9, "disponivel": true }
+        ]
+      }
+    ]
+  },
+  {
+    "restaurante_id": 10,
+    "nome_restaurante": "Restaurante 10",
+    "categorias": [
+      {
+        "nome": "Sobremesas",
+        "produtos": [
+          { "nome": "Bolo Chocolate", "preco_base": 15, "disponivel": true },
+          { "nome": "Brigadeiro", "preco_base": 5, "disponivel": true }
+        ]
+      }
+    ]
+  }
+]
