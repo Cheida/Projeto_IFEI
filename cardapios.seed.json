@@ -1,7 +1,7 @@
 [
   {
     "restaurante_id": 1,
-    "nome_restaurante": "Restaurante 1",
+    "nome_restaurante": "Burger House",
     "categorias": [
       {
         "nome": "Lanches",
@@ -14,7 +14,7 @@
   },
   {
     "restaurante_id": 2,
-    "nome_restaurante": "Restaurante 2",
+    "nome_restaurante": "Pizza Mania",
     "categorias": [
       {
         "nome": "Pizzas",
@@ -27,7 +27,7 @@
   },
   {
     "restaurante_id": 3,
-    "nome_restaurante": "Restaurante 3",
+    "nome_restaurante": "Sushi Top",
     "categorias": [
       {
         "nome": "Japonesa",
@@ -40,7 +40,7 @@
   },
   {
     "restaurante_id": 4,
-    "nome_restaurante": "Restaurante 4",
+    "nome_restaurante": "Churrasco Grill",
     "categorias": [
       {
         "nome": "Carnes",
@@ -53,7 +53,7 @@
   },
   {
     "restaurante_id": 5,
-    "nome_restaurante": "Restaurante 5",
+    "nome_restaurante": "Lanches Express",
     "categorias": [
       {
         "nome": "Lanches",
@@ -66,7 +66,7 @@
   },
   {
     "restaurante_id": 6,
-    "nome_restaurante": "Restaurante 6",
+    "nome_restaurante": "Comida Caseira",
     "categorias": [
       {
         "nome": "Pratos",
@@ -79,7 +79,7 @@
   },
   {
     "restaurante_id": 7,
-    "nome_restaurante": "Restaurante 7",
+    "nome_restaurante": "Mexican Food",
     "categorias": [
       {
         "nome": "Mexicana",
@@ -92,7 +92,7 @@
   },
   {
     "restaurante_id": 8,
-    "nome_restaurante": "Restaurante 8",
+    "nome_restaurante": "Veggie Life",
     "categorias": [
       {
         "nome": "Vegano",
@@ -105,7 +105,7 @@
   },
   {
     "restaurante_id": 9,
-    "nome_restaurante": "Restaurante 9",
+    "nome_restaurante": "Pastelaria Central",
     "categorias": [
       {
         "nome": "Pastéis",
@@ -118,7 +118,7 @@
   },
   {
     "restaurante_id": 10,
-    "nome_restaurante": "Restaurante 10",
+    "nome_restaurante": "Doces Delícia",
     "categorias": [
       {
         "nome": "Sobremesas",
