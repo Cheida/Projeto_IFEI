@@ -32,10 +32,10 @@ import java.util.List;
  *               mas serializa como "restauranteId" (camelCase) na resposta da API
  * @Field      → define o nome do campo dentro do documento MongoDB
  *
- * Coleção: cardapios  |  Banco: delivery_db
- * Para importar os dados: mongoimport --db delivery_db --collection cardapios --file cardapios.seed.json --jsonArray
+ * Coleção: cardapio  |  Banco: ifei_delivery
+ * Para importar os dados: mongoimport --db ifei_delivery --collection cardapio --file cardapio.seed.json --jsonArray
  */
-@Document(collection = "cardapios")
+@Document(collection = "cardapio")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
